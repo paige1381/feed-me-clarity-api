@@ -10,5 +10,10 @@ Rails.application.routes.draw do
     resources :tags, only: [:create]
     resources :paragraphs, only: [:create]
     resources :images, only: [:create]
+    collection do
+      get 'mind', to: 'posts#mind'
+      get 'body', to: 'posts#body'
+      get 'soul', to: 'posts#soul'
+    end
   end
 end

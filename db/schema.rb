@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_03_22_152223) do
+ActiveRecord::Schema.define(version: 2018_03_22_155640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2018_03_22_152223) do
     t.boolean "recipe?", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "post_type", null: false
   end
 
   create_table "tags", force: :cascade do |t|
